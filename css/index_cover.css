@@ -31,6 +31,7 @@
     font-size: 18px;
     margin: 0 8px;/*兩個元素之間的距離*/
     box-shadow: 0 1px 0 0 rgba(0,0,0,0.24),0 1.5px 0 0 rgba(0,0,0,0.12);
+    cursor: pointer;
 }
 
 .index-cover .index-container .btn.btn_light{
