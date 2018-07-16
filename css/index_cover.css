@@ -36,12 +36,21 @@
 .index-cover .index-container .btn.btn_light{
 /*蓋不過去了話，選擇器指定再增加即可*/
     background-color: transparent;
-    color: white;
-    
+    color: white;  
+}
+
+.index-cover .index-container .btn.btn_light:hover,.index-cover .index-container .btn.btn_light:active{
+/*蓋不過去了話，選擇器指定再增加即可*/
+    background-color: rgba(0,0,0,0.08)
 }
 
 .index-cover .index-container .btn.btn_dark{
 /*蓋不過去了話，選擇器指定再增加即可*/
 background-color: transparent;
 color: white;
+}
+
+.index-cover .index-container .btn.btn_dark:hover,.index-cover .index-container .btn.btn_dark:active{
+/*蓋不過去了話，選擇器指定再增加即可*/
+    background-color: rgba(0,0,0,0.08);
 }
