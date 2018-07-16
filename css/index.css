@@ -1,0 +1,25 @@
+body{
+    font-family: 'Ubuntu','Noto Sans CJK TC', sans-serif; 
+    margin: 0;
+}
+
+/*n從0開始，寫n了話就會是01234...*/
+/*
+section:nth-child(2n+1){ 
+    background-color: rgba(0,0,0,0.24);
+}
+*/
+
+section:nth-child(n+2){
+    padding: 32px 0;
+}
+
+/*
+section:nth-child(4){   寫法一
+    padding: 0;
+}*/
+
+
+.remove_padding{   /*在第四個section加上class="remove_padding"*/
+     padding: 0 !important;
+}

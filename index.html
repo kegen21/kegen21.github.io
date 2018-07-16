@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的購物網站RWD專案</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Galada|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/index_cover.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden.css">
+    <link rel="stylesheet" type="text/css" href="css/ratio.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/player.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/model.css">
+    <link rel="stylesheet" type="text/css" href="css/image_link.css">
+    <link rel="stylesheet" type="text/css" href="css/middle_button.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+
+      <header id="myWeb">
+          <nav class="nav">
+              <ul class="nav-list">
+                  <li class="nav-list-item"><a href="https://www.facebook.com/?ref=logo">Facebook</a></li>
+                  <li class="nav-list-item"><a href="https://www.google.com.tw">Google</a></li>
+                  <li class="nav-list-item"><a href="https://www.youtube.com/?gl=TW&hl=zh-TW">Youtube</a></li>
+              </ul>
+              <button class="nav-button" type="button" > <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+          </nav>
+      </header>
+          <!-- 懸浮button -->
+          <div class="button_list_cotainer">
+              <div class="button_list">
+                  <div class="switch">
+                      +Info
+                  </div>
+                  <ul class="folow-icons">
+                      <li><i class="fab fa-facebook-f"></i></li>
+                      <li><i class="fab fa-twitter"></i></li>
+                      <li><i class="fas fa-camera-retro"></i></li>
+                      <li><i class="fas fa-map-marker-alt"></i></li>
+                      <li><i class="fab fa-line"></i></li>
+                      <li><i class="fas fa-comments"></i></li>
+                      <li><i class="far fa-envelope"></i></li>
+                  </ul>
+              </div>
+              <div>
+                <a href="#myWeb">
+                    <button class="top_button" type="button">Top</button>
+                </a>
+              </div>
+          </div>
+      
+      <main>     
+          <section>
+              <!-- 首頁標語 -->
+              <div class="row">
+                  <div class="col-phone-100" style="background-color: pink; height: 480px;">
+                      <div class="index-cover">
+                          <div class="index-container">
+                              <h1 class="_title">YoYo'Store</h1> 
+                              <div>
+                                  <button type="button" class="btn btn_light">登入</button>
+                                  <button type="button" class="btn btn_dark">註冊</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <section>
+                 <!-- 動態輪播 -->
+                 <div class="row">
+                    <div class="col-phone-100">
+                      <div class="all-item">
+                          <div class="photo">
+                                <img src="/photo/banner0.jpg">
+                          </div>
+                           <div class="dot-menu"> <!--小圓點-->
+                               <i class="fas fa-dot-circle dot-first"></i> 
+                               <i class="fas fa-dot-circle"></i>
+                               <i class="fas fa-dot-circle"></i>
+                               <i class="fas fa-dot-circle"></i>
+                               <i class="fas fa-dot-circle"></i>
+                           </div>
+                      </div>
+                    </div>
+                 </div>
+          </section>
+          <section>
+              <!-- cards -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-phone-100 col-tablet-50">
+                      <div class="card"> <!-- 第二個類別名稱可以空格後再寫上 -->
+                          <div class="_image">
+                              <div class="ratio_3_2">
+                                <img class="ratio_content" src="https://images.pexels.com/photos/135620/pexels-photo-135620.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                              </div>
+                          </div>
+                          <div class="_content">
+                              <h4 class="_title">
+                                  title title title title title
+                              </h4>
+                              <p class="_detail">
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                              </p>
+                          </div>
+                          <div class="_action">
+                              <div class="_action_content"><!-- 在包一層，因為可能會有不同的button在裡面-->
+                                 <a class="_link" href="https://shopee.tw">
+                                    <button class="btn" type="button">
+                                      閱讀更多
+                                    </button>
+                                 </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div >
+                  <div class="col-phone-100 col-tablet-50">
+                      <div class="card"> <!-- 第二個類別名稱可以空格後再寫上 -->
+                          <div class="_image">
+                              <div class="ratio_3_2">
+                                <img class="ratio_content" src="https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                              </div>
+                          </div>
+                          <div class="_content">
+                              <h4 class="_title">
+                                  title title title title title
+                              </h4>
+                              <p class="_detail">
+                            <!-- 當敘述太多，框框會往下延伸，不好看，因此解決辦法：line-height/height-->
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                                  detail detail  detail detail  detail detail
+                              </p>
+                          </div>
+                          <div class="_action">
+                              <div class="_action_content"><!-- 在包一層，因為可能會有不同的button在裡面-->
+                                 <a class="_link" href="https://shopee.tw">
+                                    <button class="btn" type="button">
+                                      閱讀更多
+                                    </button>
+                                 </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section>
+              <!--  Video Player -->
+              <div class="container"><!-- 把區塊限制住在最大1240px-->
+                <div class="row">
+                  <div class="col-phone-100 col-tablet-67">
+                      <!--  剔除嵌入的寬高，因為不符合RWD，如果取得也有list，後面也需剔除-->
+                      <div class="video-player">
+                          <div class="ratio_16_9">
+                            <iframe id="video_player" class="ratio_content" src="https://www.youtube.com/embed/R9gnZPx6HRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-phone-100 col-tablet-33">
+                      <!-- 再一層放ratio-->
+                      <div class="video-list-container mdl-shadow--2dp">
+                          <div class="ratio_8_9">
+                              <ul class="ratio_content video-list">
+                                  <li class="_video" data-video="R9gnZPx6HRM">01. Woman's fashion</li>
+                                  <li class="_video" data-video="3x0WKYa1-II">02. MAN F/W SS16 Campaign</li>
+                                  <li class="_video" data-video="qPSHPm--u1M">03. "Blue Velvet" Fashion Movie 2017</li>
+                                  <li class="_video" data-video="MDp36UYLqAw">04. VAMFF Fashion Films</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="remove_padding">
+              <!--   image link     -->
+              <div class="container"><!-- 把區塊限制住在最大1240px-->
+                  <div class="row">
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25">
+                        <!--為了解決比例不一致問題，多加一層做ratio -->
+                        <div class="image-link">
+                            <a href="https://shopee.tw">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/994524/pexels-photo-994524.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25">
+                        <div class="image-link">
+                            <a href="https://shopee.tw">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/1051746/pexels-photo-1051746.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <div class="image-link">
+                            <a href="https://shopee.tw">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/5956/gift-brown-shopping-market.jpg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-phone-100 col-tablet-50 col-desktop-25 hidden-on-phone">
+                        <div class="image-link">
+                            <a href="https://shopee.tw">
+                                <div class="ratio_3_2">
+                                    <img class="ratio_content" src="https://images.pexels.com/photos/336372/pexels-photo-336372.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+              </div>
+          </section>
+      </main>
+      <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-phone-100 col-tablet-33">
+                  <div class="_container"> 
+                      <!--   不一定要在加一層，但是可以幫助的良好習慣   -->
+                      <ul class="footer-link">
+                          <li>會員權益</li>
+                          <li>紅利回饋</li>
+                          <li>售後服務</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-phone-100 col-tablet-33">
+                <div class="_container"> <!-- 避免展開-->
+                          <ul class="footer-link">
+                              <li>常見問題</li>
+                              <li>Model</li>
+                              <li>異業合作</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div  class="col-phone-100 col-tablet-33">
+                      <div class="_container _center">
+                          <div class="row">
+                              <div class="col-phone-100 col-phone-33">
+                                  <a href="https://www.facebook.com/?ref=logo" target="_blank";>
+                                    <i class="fab fa-facebook-square"></i>
+                                  </a>
+                              </div>
+                              <div class="col-phone-100 col-phone-33">
+                                  <a href="https://www.youtube.com/?gl=TW&hl=zh-TW" target="_blank";>
+                                    <i class="fab fa-youtube"></i>
+                                  </a>
+                              </div>
+                              <div class="col-phone-100 col-phone-33">
+                                  <a href="https://twitter.com/?lang=zh-tw" target="_blank">
+                                    <i class="fab fa-twitter-square"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>  
+                  </div>
+              </div>
+          </div>
+      </footer>
+       <script>
+      
+        $(function(){
+            
+            /*middle_button*/
+            $(".switch").click(function(){
+                  $(".folow-icons").slideToggle(); 
+              }) 
+
+            /*動態自動輪播*/
+            for( i=0 ; i<5 ; i++){
+                  //把i變數傳進去
+                $(".dot-menu i:eq("+i+")").click({id:i},function(e){
+                   n=e.data.id; //變數名稱：變數值，其中id跟e可以自取，data是關鍵值
+                   change();
+                   clearInterval(clock);
+                   clock = setInterval(auto,5000);
+                })    
+            }
+                n=0;
+                clock = setInterval(auto,5000)
+                $(".photo img").mouseover(function(){//滑鼠在圖片上會靜止
+                  clearInterval(clock);
+                })
+                $(".photo img").mouseout(function(){//滑鼠離開會繼續輪播
+                  clock = setInterval(auto,5000);
+                })
+                function auto(){
+                   n++;
+                   if(n>4){
+                      n=0;
+                   }
+                   change()
+                }
+                function change(){ //建立一個函式change複製上面程式丟進來
+    //          $(".photo").css("background-image","url(/photo/banner"+n+".jpg)") 
+                $(".photo img").fadeOut(function(){
+                    $(".photo img").attr("src","/photo/banner"+n+".jpg")
+                    $(".photo img").fadeIn();   
+                })
+
+                    $(".dot-menu i").css("color","gray")
+                    $(".dot-menu i:eq("+n+")").css("color","black")
+                }
+  
+          /*player*/
+          $("._video").click(function(){
+                 var video = $(this).data("video");
+                 var url = "https://www.youtube.com/embed/" + video;
+                 $("#video_player").attr('src',url);/*src換成url*/
+          })
+
+          /*nav*/
+          $(".nav-button").click(function(){ 
+               $(".nav-list").slideToggle();  
+          })   
+      })
+      </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+.button_list_cotainer .button_list{
+      position: fixed;
+      z-index: 999;
+      top: 15%;
+      right: 34px;
+}
+
+ .button_list .switch{
+    text-align: center;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.14),0 3px 1px rgba(0,0,0,0.2),0 1px 5px rgba(0,0,0,0.12);
+}
+      
+.button_list .switch:hover ,.button_list .switch:active{
+    text-shadow: 0 4px 4px rgba(0,0,0,0.28),0 6px 2px rgba(0,0,0,0.4),0 2px 10px rgba(0,0,0,0.12);
+}
+
+.button_list .folow-icons{
+      list-style: none;
+      margin: 16px 0;
+      padding: 0;
+      height: 300px;
+}
+
+.button_list .folow-icons li{
+     width: 24px;
+     height: 24px;
+     line-height: 24px;
+     text-align: center;
+     border-radius: 50%;
+     margin: 8px auto;
+     font-size: 16px; 
+     color: gray;
+     background-color: transparent;
+     cursor: pointer;
+     border: 2px solid gray; 
+}
+
+
+.button_list .folow-icons li:hover, .button_list .folow-icons li:active{
+     color: black;
+     border-color: black;
+}
+
+.top_button{
+    color: white;/*字體顏色*/
+    background-color: rgba(0,0,0,0.24);/*按鈕背景顏色*/
+    width: 40px;/*按鈕寬度*/
+    height: 40px;/*按鈕高度*/
+    font-size: 16px;/*字體大小*/
+    position: fixed;/*物件位置*/
+    bottom: 10%;/*底部位置*/
+    right: 3%;/*右邊位置*/
+    border: none;/*取消邊緣*/
+    border-radius: 50%;/*設定尖角半徑*/
+    box-shadow: 0px 1px 1.5px 0 rgba(0,0,0,0.12),0 1px 1px 0 rgba(0,0,0,0.24) ;
+    /*左右/上下/模糊/半徑放大/顏色*/
+    font-family: 'Galada', cursive;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.top_button:hover{
+   background-color: rgba(0,0,0,0.48);/*按鈕背景顏色*/
+   box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.24),0 2px 2px 0 rgba(0,0,0,0.48) ;
+}
+
+@media (max-width:991px){
+   .button_list .folow-icons{
+      display: none;
+   }
+    .button_list .switch{
+      display: none;
+   }
+}

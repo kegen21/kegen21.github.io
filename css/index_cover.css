@@ -1,0 +1,47 @@
+.index-cover{
+    background: url("https://images.pexels.com/photos/346744/pexels-photo-346744.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    display: table;
+    width: 100%;
+} 
+
+.index-cover .index-container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.index-cover .index-container ._title{
+    margin: 0;/*h1的margin導致了上方多一層空白*/
+    margin-bottom: 56px;/*隔開與元素的距離，記得要在 margin: 0下面*/
+    font-size: 88px;
+    color: rgba(233,50,131,0.8);
+    text-shadow: 0 2px 0 rgba(0,0,0,0.2);
+    font-family: 'Galada', cursive;
+}
+
+.index-cover .index-container .btn{
+    padding: 8px 20px;/*文字內容與按鈕的間距，上下/左右*/
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    margin: 0 8px;/*兩個元素之間的距離*/
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.24),0 1.5px 0 0 rgba(0,0,0,0.12);
+}
+
+.index-cover .index-container .btn.btn_light{
+/*蓋不過去了話，選擇器指定再增加即可*/
+    background-color: transparent;
+    color: white;
+    
+}
+
+.index-cover .index-container .btn.btn_dark{
+/*蓋不過去了話，選擇器指定再增加即可*/
+background-color: transparent;
+color: white;
+}

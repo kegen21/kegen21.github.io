@@ -1,0 +1,43 @@
+.video-player{
+    margin: 8px;  
+}
+
+.video-list-container{
+  margin: 8px;
+  border-radius: 8px;/* 解決overflow-y: scroll 造成圓角消失*/
+  overflow: hidden;/* 解決overflow-y: scroll 造成圓角消失，同時會造成shadow消失，因此要換到這行*/
+  background-color: white;/*背景用白*/
+}
+
+ul.video-list{ /*連結器：如果要加ul就不需要空格，因為ul是標籤*/
+  list-style: none;
+  padding: 0;/*不可點擊的padding貼緊左邊*/
+  margin: 0;/*magin改到ratio外層，再加一層，這層8px改0，不設置預設會是上下16px*/
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+ul.video-list ._video{
+/*
+  height: 48px;       
+  line-height: 48px;拉高後在置中
+*/
+/*  height/ line-height，容易會覆蓋到下一行，因此改用padding */
+  padding: 16px;/*可點擊的拉padding*/ /*只要調整上下高度，因此放一個就好*/
+  cursor: pointer;
+}
+
+
+ul.video-list ._video:hover{
+  background-color: rgba(0,0,0,0.12);    
+}
+
+ /*經檢查需剔除：ratio_8_9的padding-bottom以及ratio_content的position、height*/
+@media (max-width:767px){       
+  .video-list-container .ratio_8_9{
+      padding-bottom: 0;
+  }
+  .video-list-container .ratio_8_9 .ratio_content{
+      position: static;
+  }
+}

@@ -1,0 +1,41 @@
+.image{
+        width: 100%;
+}
+
+.ratio_3_2{
+        width: 100%;
+        padding-bottom: 66.67%;/*可以跟width搭配比例，往下拉出*/
+        position: relative;/*讓下一層圖片那層相對於這層填滿*/
+}
+
+.ratio_3_2 .ratio_content{
+    position: absolute;/*會貼著relative左上角開始*/
+    width: 100%;/*填滿上一層 width*/
+    height: 100%;/*填滿上一層 height*/
+}
+
+.ratio_16_9{  /* 9除16 =0.5625  */
+        width: 100%;
+        padding-bottom: 56.25%;/*可以跟width搭配比例，往下拉出*/
+        position: relative;/*讓下一層圖片那層相對於這層填滿*/
+}
+
+.ratio_16_9 .ratio_content{
+    position: absolute;/*會貼著relative左上角開始*/
+    width: 100%;/*填滿上一層 width*/
+    height: 100%;/*填滿上一層 height*/
+}
+
+/*如果選項太多就會超出範圍，跟左邊影片區會不平行，因此需要下列做法：ratio固定*/
+/*影片區是16:9，選項區？ 影片區66%跟選項區33%因此為2:1，因此66%佔了16，所以33%就是佔8*/
+.ratio_8_9{  /* 9除8 =1.125  */
+        width: 100%;
+        padding-bottom: calc(112.5% + 8px);  /*calc(112.5% + 8px)可以更精算的平行左邊那層*/
+        position: relative;/*讓下一層圖片那層相對於這層填滿*/
+}
+
+.ratio_8_9 .ratio_content{
+    position: absolute;/*會貼著relative左上角開始*/
+    width: 100%;/*填滿上一層 width*/
+    height: 100%;/*填滿上一層 height*/
+}

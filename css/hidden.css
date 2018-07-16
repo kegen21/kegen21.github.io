@@ -1,0 +1,5 @@
+@media (max-width:767px){ /*767px為最大值，一直到最小為止*/
+    .hidden-on-phone{
+    display: none !important;/*!important優先要做*/
+    }
+}

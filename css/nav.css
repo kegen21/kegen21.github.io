@@ -1,0 +1,82 @@
+.nav{
+    position: fixed; 
+    height: 64px; 
+    width: 100%; 
+    background-color: rgba(0,0,0,0.36);
+    display: table;
+    z-index: 1000;/*數字下大一點，因為內文中只要img有設到absolute會被覆蓋上去*/
+}
+
+.nav .nav-button{
+    background: none;
+    border: none;
+    height: 64px;/*佔滿整個nav*/
+    width: 64px;
+    padding: 20px;/*標籤圖案減少了8px，因此padding加上4，因為左右各4*/
+    float: right;/*遇到float上一層要加display:table*/
+    cursor: pointer;
+}
+
+.nav .nav-button > .fa-bars{ /*一般來說，bars標籤大小都是24px*/
+    font-size: 24px;
+    width: 24px; /*32改24高寬大小都要一樣，讓他是正方形，才會是在整個外圍button正中間*/
+    height: 24px;
+    color:aliceblue;
+
+}
+
+.nav .nav-list{
+      list-style: none;/*拿掉圓圈*/
+      padding: 0;
+      position: absolute;/*不會超出範圍*/
+      top: 64px;
+      margin: 0;/*可以黏在一起*/
+      background-color: rgba(0,0,0,0.36);
+      width: 100%;
+      display: none;/*可以讓一開始就先消失，在做jQ動畫跳出*/
+}
+
+/*盡量都用一樣倍數的px 例如8;*/
+.nav .nav-list .nav-list-item{
+      height: 64px;
+      margin: 0 8px;
+      padding: 0 8px ;/*先上下在左右*/
+      line-height: 64px;/*跟height設一樣，可以達到置中小技巧*/
+}
+
+
+.nav .nav-list .nav-list-item:hover, .nav .nav-list .nav-list-item:active{
+  background-color: rgba(0,0,0,0.12);/*因為rwd 記得加active*/
+
+}
+
+
+.nav .nav-list .nav-list-item >a{
+  text-decoration: none; /* 連結底線去掉*/
+  color: aliceblue;
+  /*a寫在li裡面，會有只能點擊文字才能連結，因此需要以下做法*/
+  display:inline-block;
+  width:  100%;
+}
+
+/*不寫在grid，會有問題，寫在這邊因為他是單獨的一項功能*/
+@media (min-width:992px){ 
+  .nav .nav-button{
+      display: none;/*變電腦模式時，漢堡變不見*/
+  }
+
+  .nav .nav-list{  
+/*因為上一段的display: none，把裡面的button也一起不見，因此這段做調整*/
+      display: inline-block !important;/*加上!important變成絕對值，一定要發生*/
+      position: static;/*不會被特別定位*/
+      background-color: transparent;/*透明*/
+      top: auto;/*沒 position，top沒反應，因此也把它取消*/
+      float: right;/*全部集中右邊，沒反應是因為在原本設定被設為滿版的關係*/
+      width: auto;
+  }
+  .nav .nav-list .nav-list-item{
+      /*為了讓button集中，可以用RWD最常用法 float: left*/
+      float: left;
+  }
+
+}
